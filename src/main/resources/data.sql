@@ -1,0 +1,8 @@
+-- INSERT INTO bcafBatch3.MstGroupMenu ( CreatedBy, CreatedDate, ModifiedBY, ModifiedDate, NamaGroupMenu) VALUES (N'1', N'2024-03-06 15:01:58.0640000', NULL, NULL, N'UserManagement')
+-- INSERT INTO bcafBatch3.MstMenu (CreatedBy, CreatedDate, Host, ModifiedBY, ModifiedDate, NamaMenu, PathMenu, IDGroupMenu) VALUES (N'1', N'2024-03-06 15:02:10.7380000', N'localhost:8080', NULL, NULL, N'Group Menu', N'/groupmenu', N'1')
+-- INSERT INTO bcafBatch3.MstMenu (CreatedBy, CreatedDate, Host, ModifiedBY, ModifiedDate, NamaMenu, PathMenu, IDGroupMenu) VALUES (N'1', N'2024-03-06 15:02:10.7390000', N'localhost:8080', NULL, NULL, N'Menu', N'/menu', N'1')
+-- INSERT INTO bcafBatch3.MstMenu (CreatedBy, CreatedDate, Host, ModifiedBY, ModifiedDate, NamaMenu, PathMenu, IDGroupMenu) VALUES (N'1', N'2024-03-06 15:02:10.7390000', N'localhost:8080', NULL, NULL, N'Akses', N'/akses', N'1')
+-- INSERT INTO bcafBatch3.MstAkses (CreatedBy, CreatedDate, ModifiedBY, ModifiedDate, NamaAkses) VALUES (N'1', N'2024-03-06 15:02:30.5880000', NULL, NULL, N'Admin')
+-- INSERT INTO bcafBatch3.MapAksesMenu (IDAkses,IDMenu) VALUES (N'1', N'1')
+-- INSERT INTO bcafBatch3.MapAksesMenu (IDAkses,IDMenu) VALUES (N'1', N'2')
+-- INSERT INTO bcafBatch3.MapAksesMenu (IDAkses,IDMenu) VALUES (N'1', N'3')

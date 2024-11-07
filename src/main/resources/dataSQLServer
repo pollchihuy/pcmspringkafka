@@ -1,0 +1,23 @@
+INSERT INTO [bcafBatch3].[MstGroupMenu] ([IDGroupMenu], [CreatedBy], [CreatedDate], [ModifiedBY], [ModifiedDate], [NamaGroupMenu]) VALUES (N'1', N'1', N'2024-03-06 15:01:58.0640000', NULL, NULL, N'UserManagement')
+GO
+
+INSERT INTO [bcafBatch3].[MstMenu] ([IDMenu], [CreatedBy], [CreatedDate], [Host], [ModifiedBY], [ModifiedDate], [NamaMenu], [PathMenu], [IDGroupMenu]) VALUES (N'1', N'1', N'2024-03-06 15:02:10.7380000', N'localhost:8080', NULL, NULL, N'Group Menu', N'/groupmenu', N'1')
+GO
+
+INSERT INTO [bcafBatch3].[MstMenu] ([IDMenu], [CreatedBy], [CreatedDate], [Host], [ModifiedBY], [ModifiedDate], [NamaMenu], [PathMenu], [IDGroupMenu]) VALUES (N'2', N'1', N'2024-03-06 15:02:10.7390000', N'localhost:8080', NULL, NULL, N'Menu', N'/menu', N'1')
+GO
+
+INSERT INTO [bcafBatch3].[MstMenu] ([IDMenu], [CreatedBy], [CreatedDate], [Host], [ModifiedBY], [ModifiedDate], [NamaMenu], [PathMenu], [IDGroupMenu]) VALUES (N'3', N'1', N'2024-03-06 15:02:10.7390000', N'localhost:8080', NULL, NULL, N'Akses', N'/akses', N'1')
+GO
+
+INSERT INTO [bcafBatch3].[MstAkses] ([IDAkses], [CreatedBy], [CreatedDate], [ModifiedBY], [ModifiedDate], [NamaAkses]) VALUES (N'2', N'1', N'2024-03-06 15:02:30.5880000', NULL, NULL, N'Admin')
+GO
+
+INSERT INTO [bcafBatch3].[MapAksesMenu] ([IDAkses], [IDMenu]) VALUES (N'2', N'1')
+GO
+
+INSERT INTO [bcafBatch3].[MapAksesMenu] ([IDAkses], [IDMenu]) VALUES (N'2', N'2')
+GO
+
+INSERT INTO [bcafBatch3].[MapAksesMenu] ([IDAkses], [IDMenu]) VALUES (N'2', N'3')
+GO
