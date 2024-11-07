@@ -18,7 +18,7 @@ public class HitProducer {
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,KafkaProConfig.getKafkaProHost());
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+//        properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         KafkaProducer<String,String> producer = new KafkaProducer<String,String>(properties);
         for (int i = 0; i < lt.size(); i++) {
             ProducerRecord<String,String> record = new ProducerRecord<>(KafkaProConfig.getKafkaProTopics(),new Gson().toJson(lt.get(i)));
@@ -33,7 +33,7 @@ public class HitProducer {
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"localhost:9092");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+//        properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
         KafkaProducer<String,String> producer = new KafkaProducer<String,String>(properties);
         for (int i = 0; i < 10; i++) {
